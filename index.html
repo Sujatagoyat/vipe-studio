@@ -12,9 +12,9 @@
 
 <body>
     <header class="bg-black py-5  ">
-        <div class="container mx-auto px-[12px] ">
+        <div class="max-w-[1320px] mx-auto px-[12px] ">
             <nav>
-                <div class="flex items-center gap-10 justify-between bg-black  ">
+                <div class="flex items-center gap-10 justify-between fixed bg-black w-full top-0 left-0 z-[20]  ">
                     <div>
                         <img class="w-full cursor-pointer" src="./dist/images/logo.png" alt="logo.png">
                     </div>
@@ -30,7 +30,7 @@
                         <ul
                             class="flex gap-4 max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:min-h-screen">
                             <li class="relative inline -block group">
-                                <a href="#" aria-label="WordPresssolution"
+                                <a href="#wordpress" aria-label="WordPresssolution"
                                     class="text-white flex gap-1 ff-gilroy-normal font-normal text-base leading-6 text-nowrap">WordPress
                                     Solution <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -55,10 +55,8 @@
 
                                 </a>
                             </li>
-
-
                             <li class="relative inline-block group">
-                                <a href="#" aria-label="services"
+                                <a href="#services" aria-label="services"
                                     class="text-white flex gap-1 ff-gilroy-normal font-normal text-base leading-6 text-nowrap">Services
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -85,10 +83,10 @@
                                 </a>
                             </li>
                             <li class="flex"><a class="text-white font-normal text-[16px] leading-[150%] font-[gilroy]"
-                                    href="">Portfolio</a>
+                                    href="#portfolio">Portfolio</a>
                             </li>
                             <li class="relative inline -block group">
-                                <a href="#" aria-label="about"
+                                <a href="#about" aria-label="about"
                                     class="text-white flex gap-1 ff-gilroy-normal font-normal text-base leading-6 text-nowrap">About
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +120,8 @@
 
                         </ul>
                         <ul class="flex items-center justify-center gap-[36px] max-lg:hidden">
-                            <li><a class="text-white text-[16px] font-[gilroy] leading-[150%] lg:text-nowrap" href="">1
+                            <li><a class="text-white text-[16px] font-[gilroy] leading-[150%] lg:text-nowrap"
+                                    href="tel:123-456-7890">1
                                     888
                                     266-6917
                                     <span class="font-[inter] text-[14px]"> (<span
@@ -131,30 +130,28 @@
                                 <button
                                     class=" text-white text-[18px] font-[600] font-[gilroy] leading-[150%] text-nowrap bg-[#6022EA] border-2 border-transparent rounded-[80px] px-[24px] py-[10px] me-5  hover:bg-white hover:text-[#6022EA] transition-all ease-linear duration-300  hover:shadow-purple-300 shadow-lg ">Contact
                                     Us</button>
-
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_1_17003)">
-                                        <path
-                                            d="M12 0C18.6276 0 24 5.3724 24 12C24 18.6276 18.6276 24 12 24C5.3724 24 0 18.6276 0 12C0 5.3724 5.3724 0 12 0ZM12 1.674C9.26137 1.674 6.63492 2.76191 4.69842 4.69842C2.76191 6.63492 1.674 9.26137 1.674 12C1.674 14.7386 2.76191 17.3651 4.69842 19.3016C6.63492 21.2381 9.26137 22.326 12 22.326C14.7386 22.326 17.3651 21.2381 19.3016 19.3016C21.2381 17.3651 22.326 14.7386 22.326 12C22.326 9.26137 21.2381 6.63492 19.3016 4.69842C17.3651 2.76191 14.7386 1.674 12 1.674ZM14.4576 4.1856C15.2378 4.48059 15.9673 4.89515 16.62 5.4144C16.77 5.5296 16.914 5.652 17.0556 5.7828C17.082 5.8056 17.1048 5.8296 17.13 5.8548C17.5236 6.2184 17.8812 6.6276 18.198 7.0668C18.2424 7.128 18.2892 7.1844 18.33 7.2432C18.4068 7.356 18.4788 7.4736 18.5508 7.5912C18.6746 7.78955 18.7888 7.99379 18.8928 8.2032C18.9564 8.3232 19.0128 8.454 19.0716 8.5812C19.1112 8.6688 19.1556 8.7588 19.1916 8.8524C19.2792 9.0708 19.3572 9.2904 19.428 9.5148C19.4508 9.5892 19.4688 9.6684 19.4904 9.7428C19.6121 10.1698 19.6984 10.606 19.7484 11.0472C19.7568 11.1264 19.7688 11.2104 19.7748 11.2884C19.7988 11.5464 19.8144 11.8068 19.8144 12.0684C19.8129 12.5796 19.7659 13.0896 19.674 13.5924C19.6572 13.68 19.6428 13.7688 19.626 13.8528C19.578 14.0808 19.5228 14.304 19.458 14.5248C18.8472 14.2452 18.1296 13.8336 17.9424 13.3812C17.6016 12.5652 16.6944 12.1572 16.3248 11.106C15.7164 9.366 16.524 9.4116 16.6368 8.3316C16.6896 7.8252 16.3248 7.7196 15.8436 7.926C14.7204 8.3976 14.34 8.2164 14.1132 7.3704C13.8864 6.5268 14.1132 6.2916 14.1132 6.2916C13.3476 6.3756 13.3188 5.4432 13.716 5.208C13.992 5.0496 14.226 4.5636 14.4576 4.1856ZM11.2488 9.3564C11.9568 9.0324 12.6108 8.916 12.5244 8.3592C12.4404 7.8084 12.2412 7.398 11.1348 7.398C10.0284 7.398 10.5108 8.916 9.6036 8.01C8.6964 7.11 9.8016 7.3428 10.2552 7.1376C10.71 6.9312 11.1636 6.0852 10.3692 6.0252C9.576 5.9688 9.7452 6.3756 9.1212 6.1452C8.4972 5.91 8.214 6.96 7.8156 6.8136C7.554 6.7152 6.852 6.1752 6.3864 5.6436C5.43632 6.46996 4.68418 7.49934 4.1856 8.6556C4.3212 10.224 5.1504 11.0472 5.1504 11.0472C5.1504 11.0472 5.5764 12.0684 8.13 13.3236C8.13 13.3236 8.61 13.3524 8.0436 12.7704C7.4772 12.186 6.852 11.4564 7.5612 11.0784C8.2692 10.6956 8.4696 10.728 8.64 11.43C8.8092 12.1308 9.378 11.718 9.4332 11.0472C9.4908 10.3788 10.5396 9.6792 11.2488 9.3552V9.3564ZM10.7088 12.8844C11.9304 12.8844 11.8164 13.2648 12.7812 14.1144C13.7448 14.9592 13.2348 15.8052 12.7512 16.4484C12.27 17.0892 11.844 17.8164 11.6172 19.134C11.3892 20.4468 10.794 19.5108 10.5972 19.1904C10.398 18.8676 10.086 18.5772 10.1724 17.2344C10.2564 15.8928 9.348 16.6824 9.0372 14.9304C8.7252 13.1808 9.4908 12.8856 10.71 12.8856L10.7088 12.8844ZM16.6812 14.0412C17.0064 13.8336 17.7852 14.3748 17.6172 14.9448C17.4456 15.5148 16.908 15.1932 16.638 14.9448C16.368 14.6976 16.3536 14.2452 16.6812 14.0412Z"
-                                            fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1_17003">
-                                            <rect width="24" height="24" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="text-white font-normal text-[16px] leading-[150%] font-[gilroy]">Eng</p>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.8789 9.29297L12.5859 13.586L8.29291 9.29297L6.87891 10.707L12.5859 16.414L18.2929 10.707L16.8789 9.29297Z"
-                                        fill="white" />
-                                </svg>
                             </li>
 
+                            <li class=" flex relative group max-lg:flex-col items-center  gap-2">
+                                <img class="animate-spin" src="./dist/images/globe.png" alt="globe">
+                                <a href="" aria-label="WordPresssolution"
+                                    class="text-white flex gap-1 font-Gilroy-Light font-normal text-base leading-6 text-nowrap">Eng
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.8789 9.29297L12.5859 13.586L8.29291 9.29297L6.87891 10.707L12.5859 16.414L18.2929 10.707L16.8789 9.29297Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <div
+                                    class=" absolute flex-col gap-2 z-[1]  hidden left-0 right-0 top-6 hover:duration-300 transition-all ease-linear group-hover:flex justify-start items-center block bg-gray-600 max-w-full rounded-[10px]">
+                                    <span
+                                        class="text-white text-base font-normal ff-Gilroy-regular leading-6 p-2 hover:bg-gray-400 w-full">Eng</span>
+                                    <span
+                                        class=" text-white text-base font-normal ff-Gilroy-regular leading-6 p-2 hover:bg-gray-400 w-full">Hindi</span>
+                                </div>
+
+                            </li>
 
 
                         </ul>
@@ -166,12 +163,12 @@
         </div>
     </header>
     <!-- ====================================section-1==================================== -->
-    <section class="bg-black py-20">
-        <div class="container mx-auto px-[12px]">
+    <section id="wordpress" class="bg-black py-20">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row relative  flex flex-row flex-wrap mx-[-12px] lg:flex-row flex-col-reverse">
                 <div class="col-6 lg:w-[50%] px-[12px]">
                     <h1
-                        class="text-white lg:text-[72px] text-[48px] max-sm:text-[24px] font-normal leading-[106%] ff-konexy-regular max-w-[646px] mt-10 text- wrap relative after:absolute after:bg-[#6022EA] after:w-[5px] after:h-[90%] after:top-[5%] after:left-[-3%]">
+                        class="text-white lg:text-[72px] text-[48px] max-sm:text-[24px] font-normal leading-[106%] ff-konexy-regular  mt-10 text- wrap relative after:absolute after:bg-[#6022EA] after:w-[5px] after:h-[90%] after:top-[5%] after:left-[-3%]">
                         WordPress Development Agency</h1>
                     <p class="text-white lg:text-[24px] text-[20px] font-bold leading-[121%] ff-gilroy-regular mt-10">
                         for Enterprise +
@@ -208,10 +205,11 @@
 
 
                         <div
-                            class="box w-[228px] h-[119px] bg-[#0000004d] px-[18px] py-[13px] rounded-[10px] backdrop-blur-[10px] absolute bottom-2 left-5 cursor-pointer">
-                            <img src="./dist/images/star-img.png" alt="star-img.png">
-                            <img src="./dist/images/5-star.png" alt="5-star.png">
-                            <p class="text-white text-[16px] font-normal leading-[150%] font-[jost] pt-2">Rated 5.0
+                            class="box  bg-[#0000004d] px-[18px] max-sm:px-[10px] py-[13px] max-sm:py-[10px] rounded-[10px] backdrop-blur-[10px] absolute bottom-2 left-5 cursor-pointer">
+                            <img class="max-sm:h-[20px]" src="./dist/images/star-img.png" alt="star-img.png">
+                            <img class="max-sm:h-[20px]" src="./dist/images/5-star.png" alt="5-star.png">
+                            <p class="text-white text-[16px] max-sm:10px font-normal leading-[150%] font-[jost] pt-2">
+                                Rated 5.0
                                 Excellent</p>
                         </div>
                     </div>
@@ -228,7 +226,7 @@
     </section>
     <!-- ============================section-1.0==================================================== -->
     <section class="bg-[#130F1B] py-[64px]">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row flex flex-wrap flex-row mx-[-12px]">
                 <div class="col-6 lg:w-[50%] px-[12px]">
                     <h2 class="text-white text-[36px] font-normal leading-normal ff-konexy-regular">Tell us more....
@@ -244,7 +242,7 @@
                     <div
                         class="search-box flex max-w-[573px] height-[64px] items-center py-[20px] ps-[30px] pe-[20px] mt-5 lg:mt-0 rounded-[80px] border-[#ffffff1a] bg-[#252525]">
                         <input type="text" placeholder="What do you need assistance with?"
-                            class="text-white text-[16px] max-sm:text-[12px] font-normal leading-[150%] opacity-[0.7] w-full  ff-Gilroy-regular bg-transparent"
+                            class="text-white text-[16px] max-sm:text-[12px] font-normal leading-[150%]  w-full  ff-Gilroy-regular bg-transparent"
                             style="border: none; outline: none;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -282,13 +280,13 @@
         </div>
     </section>
     <!-- =====================section-2========================================================== -->
-    <section class="bg-[#F6F6F6] py-10">
-        <div class="container mx-auto px-[12px]">
+    <section class="bg-[#F6F6F6] pt-10">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <h1
                 class="text-black text-[48px] font-normal leading-[56px] ff-konexy-regular mb-5 lg:text-left text-center">
                 Featured on</h1>
-            <div class="flex flex-wrap items-center max-2xl:justify-center gap-[60px]">
-                <img class="cursor-pointer" src="./dist/images/yahoo-1.png" alt="yahoo-1.png">
+            <div class="flex  items-center justify-between gap-[60px] overflow-x-scroll no-scrollbar pb-10  ">
+                <img class="cursor-pointer " src="./dist/images/yahoo-1.png" alt="yahoo-1.png">
                 <img class="cursor-pointer" src="./dist/images/yahoo-2.png" alt="yahoo-2.png">
                 <img class="cursor-pointer" src="./dist/images/yahoo-3.png" alt="yahoo-3.png">
                 <img class="cursor-pointer" src="./dist/images/yahoo-4.png" alt="yahoo-4.png">
@@ -298,131 +296,120 @@
         </div>
     </section>
     <!-- =============================== section-3 ======================================================-->
-    <section class="bg-[#FEFEFE] pt-10 pb-20">
-        <div class="container mx-auto px-[12px]">
-            <h1
-                class="text-black text-[48px] font-normal leading-[56px] ff-konexy-regular pb-10 text-center lg:text-left">
-                Integer et
-                nisl non
-            </h1>
-            <div class="row flex flex-row flex-wrap mx-[-12px] justify-center items-center ">
+    <section class="pt-[97px] pb-[129px] ">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
+            <h3 class="text-black text-[48px] font-normal leading-normal ff-konexy-regular pb-[54px]">Integer et nisl
+                non</h3>
+            <div class="row flex flex-wrap flex-row mx-[-12px] justify-center">
                 <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px]">
                     <div
-                        class="box   flex flex-col items-center justify-center pt-[60px] px-[38px] lg:pb-[37px] pb-[65px]  shadow border-solid border-[#E6E6E6] border-2 rounded-[16px] hover:shadow-lg hover:border-transparent cursor-pointer duration-300  lg:me-0 mt-5">
-                        <p class="pb-10"><svg width="71" height="70" viewBox="0 0 71 70" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.9">
-                                    <path
-                                        d="M47.198 18.0469C47.198 17.7461 46.9519 17.5 46.6511 17.5H20.4011C20.1003 17.5 19.8542 17.7461 19.8542 18.0469V21.3281C19.8542 21.6289 20.1003 21.875 20.4011 21.875H46.6511C46.9519 21.875 47.198 21.6289 47.198 21.3281V18.0469ZM46.6511 27.3437H20.4011C20.1003 27.3437 19.8542 27.5898 19.8542 27.8906V31.1719C19.8542 31.4727 20.1003 31.7187 20.4011 31.7187H46.6511C46.9519 31.7187 47.198 31.4727 47.198 31.1719V27.8906C47.198 27.5898 46.9519 27.3437 46.6511 27.3437ZM32.9792 37.1875H20.4011C20.1003 37.1875 19.8542 37.4336 19.8542 37.7344V41.0156C19.8542 41.3164 20.1003 41.5625 20.4011 41.5625H32.9792C33.28 41.5625 33.5261 41.3164 33.5261 41.0156V37.7344C33.5261 37.4336 33.28 37.1875 32.9792 37.1875ZM29.698 58.2422H14.3855V10.1172H52.6668V33.6328C52.6668 33.9336 52.9128 34.1797 53.2136 34.1797H57.0418C57.3425 34.1797 57.5886 33.9336 57.5886 33.6328V7.38281C57.5886 6.17285 56.6111 5.19531 55.4011 5.19531H11.6511C10.4412 5.19531 9.46362 6.17285 9.46362 7.38281V60.9766C9.46362 62.1865 10.4412 63.1641 11.6511 63.1641H29.698C29.9988 63.1641 30.2449 62.918 30.2449 62.6172V58.7891C30.2449 58.4883 29.9988 58.2422 29.698 58.2422ZM54.0886 53.1562C56.071 51.3584 57.3152 48.7607 57.3152 45.8691C57.3152 40.4346 52.906 36.0254 47.4714 36.0254C42.0369 36.0254 37.6277 40.4346 37.6277 45.8691C37.6277 48.7607 38.8718 51.3584 40.8543 53.1562C36.9578 55.3779 34.2781 59.4932 34.073 64.2373C34.0593 64.5449 34.3123 64.8047 34.6199 64.8047H37.908C38.1951 64.8047 38.4343 64.5791 38.4548 64.2852C38.7214 59.5547 42.6658 55.7812 47.4714 55.7812C52.2771 55.7812 56.2214 59.5547 56.488 64.2852C56.5017 64.5723 56.741 64.8047 57.0349 64.8047H60.323C60.6375 64.8047 60.8835 64.5449 60.8699 64.2373C60.6716 59.4863 57.9851 55.3779 54.0886 53.1562ZM47.4714 40.4004C50.4929 40.4004 52.9402 42.8477 52.9402 45.8691C52.9402 48.8906 50.4929 51.3379 47.4714 51.3379C44.45 51.3379 42.0027 48.8906 42.0027 45.8691C42.0027 42.8477 44.45 40.4004 47.4714 40.4004Z"
-                                        fill="#4F00FF" />
-                                </g>
-                            </svg></p>
-                        <p
-                            class="text-black text-[24px] font-semibold leading-[130%] font-[inter] max-w-[342px] text-center mx-auto ">
-                            Enterprise WordPress<br> Solutions</p>
-                        <p
-                            class="text-[#4D4D4D] text-[16px] font-normal leading-[24px] ff-gilroy-regular max-w-[342px] text-center pt-4 pb-6">
-                            Pretium, a et sapien non nunc libero. Id dolor sed quis convallis turpis purus feugiat nibh
-                            eu.
-                            Auctor cras hac ac,
-                            sociis diam montes, turpis<br> commodo elit.</p>
-                        <p
-                            class=" text-[#6022EA] text-[16px] font-semibold leading-[24px] ff-gilroy-regular text-center  relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[#6022EA] hover:after:w-full after:duration-300 ">
-                            Learn More</p>
-                    </div>
-                </div>
-                <div class="col-4 lg:w-[33.33%]  md:w-[50%] px-[12px] ">
-                    <div
-                        class="box flex flex-col items-center justify-center pt-[60px] px-[38px] pb-[20px] shadow border-solid border-[#E6E6E6] border-2 rounded-[16px] hover:shadow-lg hover:border-transparent cursor-pointer duration-300  lg:me-0 mt-5">
-                        <p class="pb-5 mx-auto">
-                            <svg width="71" height="70" viewBox="0 0 71 70" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.958 8.75V17.5H9.18734V8.75H17.958ZM4.802 4.375V21.875H22.3434V4.375H4.802Z"
-                                    fill="#6022EA" />
+                        class="card1 max-w-[418px] border border-[#E6E6E6] border-solid hover:border-transparent rounded-[16px] flex justify-center flex-col pt-[60px] pb-[38px] px-[38px] cursor-pointer hover:shadow-blue-100 shadow hover:shadow-lg duration-300 sha ">
+
+                        <svg class="mx-auto pb-[20px]" xmlns="http://www.w3.org/2000/svg" width="71" height="70"
+                            viewBox="0 0 71 70" fill="none">
+                            <g opacity="0.9">
                                 <path
-                                    d="M39.8858 15.3125V24.0625H31.1151V15.3125H39.8858ZM26.7297 10.9375V28.4375H44.2711V10.9375H26.7297Z"
-                                    fill="#6022EA" />
-                                <path d="M17.958 35V43.75H9.18734V35H17.958ZM4.802 30.625V48.125H22.3434V30.625H4.802Z"
-                                    fill="#6022EA" />
-                                <path
-                                    d="M48.6551 21.875V35H35.499V48.125H22.343V65.625H66.1964V21.875H48.6551ZM39.8844 39.375H48.6551V48.125H39.8844V39.375ZM35.499 61.25H26.7284V52.5H35.499V61.25ZM48.6551 61.25H39.8844V52.5H48.6551V61.25ZM61.8111 61.25H53.0404V52.5H61.8111V61.25ZM61.8111 48.125H53.0404V39.375H61.8111V48.125ZM53.0404 35V26.25H61.8111V35H53.0404Z"
-                                    fill="#6022EA" />
-                            </svg>
-                        </p>
+                                    d="M47.198 18.0469C47.198 17.7461 46.9519 17.5 46.6511 17.5H20.4011C20.1003 17.5 19.8542 17.7461 19.8542 18.0469V21.3281C19.8542 21.6289 20.1003 21.875 20.4011 21.875H46.6511C46.9519 21.875 47.198 21.6289 47.198 21.3281V18.0469ZM46.6511 27.3437H20.4011C20.1003 27.3437 19.8542 27.5898 19.8542 27.8906V31.1719C19.8542 31.4727 20.1003 31.7187 20.4011 31.7187H46.6511C46.9519 31.7187 47.198 31.4727 47.198 31.1719V27.8906C47.198 27.5898 46.9519 27.3437 46.6511 27.3437ZM32.9792 37.1875H20.4011C20.1003 37.1875 19.8542 37.4336 19.8542 37.7344V41.0156C19.8542 41.3164 20.1003 41.5625 20.4011 41.5625H32.9792C33.28 41.5625 33.5261 41.3164 33.5261 41.0156V37.7344C33.5261 37.4336 33.28 37.1875 32.9792 37.1875ZM29.698 58.2422H14.3855V10.1172H52.6668V33.6328C52.6668 33.9336 52.9128 34.1797 53.2136 34.1797H57.0418C57.3425 34.1797 57.5886 33.9336 57.5886 33.6328V7.38281C57.5886 6.17285 56.6111 5.19531 55.4011 5.19531H11.6511C10.4412 5.19531 9.46362 6.17285 9.46362 7.38281V60.9766C9.46362 62.1865 10.4412 63.1641 11.6511 63.1641H29.698C29.9988 63.1641 30.2449 62.918 30.2449 62.6172V58.7891C30.2449 58.4883 29.9988 58.2422 29.698 58.2422ZM54.0886 53.1562C56.071 51.3584 57.3152 48.7607 57.3152 45.8691C57.3152 40.4346 52.906 36.0254 47.4714 36.0254C42.0369 36.0254 37.6277 40.4346 37.6277 45.8691C37.6277 48.7607 38.8718 51.3584 40.8543 53.1562C36.9578 55.3779 34.2781 59.4932 34.073 64.2373C34.0593 64.5449 34.3123 64.8047 34.6199 64.8047H37.908C38.1951 64.8047 38.4343 64.5791 38.4548 64.2852C38.7214 59.5547 42.6658 55.7812 47.4714 55.7812C52.2771 55.7812 56.2214 59.5547 56.488 64.2852C56.5017 64.5723 56.741 64.8047 57.0349 64.8047H60.323C60.6375 64.8047 60.8835 64.5449 60.8699 64.2373C60.6716 59.4863 57.9851 55.3779 54.0886 53.1562ZM47.4714 40.4004C50.4929 40.4004 52.9402 42.8477 52.9402 45.8691C52.9402 48.8906 50.4929 51.3379 47.4714 51.3379C44.45 51.3379 42.0027 48.8906 42.0027 45.8691C42.0027 42.8477 44.45 40.4004 47.4714 40.4004Z"
+                                    fill="#4F00FF" />
+                            </g>
+                        </svg>
 
                         <p
-                            class="text-black text-[24px] font-semibold leading-[130%] font-[inter] max-w-[342px] text-center mx-auto pt-5 pb-[15px]">
-                            Small to Mid Size Business<br> Development</p>
+                            class="text-black text-[24px] font-semibold leading-[130%] font-Inter mx-w-[342px]  text-center mx-auto pt-[20px] pb-[15px]">
+                            Enterprise WordPress Solutions</p>
                         <p
-                            class="text-[#4D4D4D] text-[16px] font-normal leading-[24px] ff-gilroy-regular max-w-[342px] text-center pb-[20px] mx-auto">
+                            class="text-[#4D4D4D] text-[16px] font-normal leading-[150%] max-w-[342px] text-center mx-auto pb-[20px]">
+                            Pretium, a et sapien non nunc
+                            libero. Id
+                            dolor sed quis
+                            convallis turpis purus feugiat nibh eu. Auctor cras hac ac,
+                            sociis diam montes, turpis commodo elit.</p>
+                        <button
+                            class="text-[#6022EA] text-[16px] font-semibold leading-[150%] cursor-pointer text-center mx-auto flex justify-center ff-Gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-full after:duration-300">Learn
+                            More</button>
+                    </div>
+                </div>
+
+                <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px]">
+                    <div
+                        class="card2 max-w-[418px] border border-[#E6E6E6] border-solid hover:border-transparent rounded-[16px] flex justify-center flex-col pt-[60px] pb-[38px] px-[38px] cursor-pointer hover:shadow-blue-100  shadow hover:shadow-lg duration-300 mt-5 lg:mt-0 md:mt-0">
+
+                        <svg class="mx-auto pb-[20px]" xmlns="http://www.w3.org/2000/svg" width="71" height="70"
+                            viewBox="0 0 71 70" fill="none">
+                            <path d="M17.958 8.75V17.5H9.18734V8.75H17.958ZM4.802 4.375V21.875H22.3434V4.375H4.802Z"
+                                fill="#6022EA" />
+                            <path
+                                d="M39.8858 15.3125V24.0625H31.1151V15.3125H39.8858ZM26.7297 10.9375V28.4375H44.2711V10.9375H26.7297Z"
+                                fill="#6022EA" />
+                            <path d="M17.958 35V43.75H9.18734V35H17.958ZM4.802 30.625V48.125H22.3434V30.625H4.802Z"
+                                fill="#6022EA" />
+                            <path
+                                d="M48.6551 21.875V35H35.499V48.125H22.343V65.625H66.1964V21.875H48.6551ZM39.8844 39.375H48.6551V48.125H39.8844V39.375ZM35.499 61.25H26.7284V52.5H35.499V61.25ZM48.6551 61.25H39.8844V52.5H48.6551V61.25ZM61.8111 61.25H53.0404V52.5H61.8111V61.25ZM61.8111 48.125H53.0404V39.375H61.8111V48.125ZM53.0404 35V26.25H61.8111V35H53.0404Z"
+                                fill="#6022EA" />
+                        </svg>
+
+                        <p
+                            class="text-black text-[24px] font-semibold leading-[130%] font-Inter max-w-[342px]  text-center mx-auto pt-[20px] pb-[15px]">
+                            Small to Mid Size Business Development</p>
+                        <p
+                            class="text-[#4D4D4D] text-[16px] font-normal leading-[150%] max-w-[342px] text-center mx-auto pb-[20px]">
                             Et nunc fermentum id amet tempus, elementum. Eget ac ultrices tortor, mattis amet blandit
-                            aenean amet. Massa diam lacus,<br>
+                            aenean amet. Massa diam lacus,
                             aliquam neque, cursus.</p>
                         <button
-                            class=" text-[#6022EA] text-[16px] font-semibold leading-[24px] ff-gilroy-regular text-center mx-auto  relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[#6022EA] hover:after:w-full after:duration-300 mb-[20px]  ">
-                            Learn More</button>
+                            class="text-[#6022EA] text-[16px] font-semibold leading-[150%] cursor-pointer text-center mx-auto flex justify-center ff-Gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-full after:duration-300">Learn
+                            More</button>
                     </div>
                 </div>
-                <div class="col-4 lg:w-[33.33%]  md:w-[50%] px-[12px]">
+
+                <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px] flex">
                     <div
-                        class="box  flex flex-col items-center justify-center pt-[60px] px-[38px] pb-[70px] shadow border-solid border-[#E6E6E6] border-2 rounded-[16px] hover:shadow-lg hover:border-transparent cursor-pointer duration-300 lg:me-0 mt-5">
-                        <p class="pb-10">
-                            <svg width="71" height="66" viewBox="0 0 71 66" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.9">
-                                    <g opacity="0.8">
-                                        <g clip-path="url(#clip0_1_17100)">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M37.899 49.4498C32.003 49.4498 26.0129 45.9498 22.517 41.3172C5.7448 41.3172 5.23779 65.2775 5.23779 65.2775H70.5561C70.5561 65.2775 71.8727 41.2109 53.0112 41.2109C49.5193 45.9008 43.795 49.4498 37.899 49.4498Z"
-                                                fill="#4F00FF" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M51.948 20.7262C51.948 27.6199 45.6553 40.8022 37.8866 40.8022C30.1302 40.8022 23.8335 27.6158 23.8335 20.7262C23.8335 13.8366 30.1261 8.24316 37.8866 8.24316C45.6553 8.24725 51.948 13.8407 51.948 20.7262Z"
-                                                fill="#4F00FF" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M58.2184 14.7768C58.2184 13.4847 56.4193 12.4421 54.1868 12.4339V9.77209C54.1868 9.37547 54.3381 0.0898438 37.9339 0.0898438C21.5379 0.0898438 21.6892 9.37547 21.6892 9.77209V12.5279C21.6483 12.5279 21.6156 12.5157 21.5788 12.5157C19.3586 12.5157 17.5718 13.5419 17.5718 14.8136V26.0741C17.5718 27.3375 19.3627 28.3679 21.5788 28.3679C23.7949 28.3679 25.594 27.3375 25.594 26.0741V14.8136C25.594 14.6377 25.4836 14.4783 25.4182 14.3147V11.244C25.4182 10.9619 24.2406 3.95375 37.9339 3.95375C51.6313 3.95375 50.2084 10.9619 50.2084 11.244V14.4783C50.1839 14.5805 50.1062 14.6705 50.1062 14.7768V26.2949C50.1062 27.591 51.9176 28.6418 54.1623 28.6418C54.2114 28.6418 54.2482 28.6255 54.2972 28.6255V32.8328H50.2739V36.799H58.2593L58.2184 14.7768Z"
-                                                fill="#4F00FF" />
-                                        </g>
-                                    </g>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1_17100">
-                                        <rect width="70" height="65.4206" fill="white"
-                                            transform="translate(0.833496)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </p>
+                        class="card3 max-w-[418px] border border-[#E6E6E6] border-solid hover:border-transparent rounded-[16px] flex justify-center flex-col pt-[60px] pb-[38px] px-[38px] cursor-pointer hover:shadow-blue-100  shadow hover:shadow-lg duration-300 mt-5 lg:mt-0">
+
+                        <svg class="mx-auto pb-[20px]" xmlns="http://www.w3.org/2000/svg" width="71" height="66"
+                            viewBox="0 0 71 66" fill="none">
+                            <g clip-path="url(#clip0_1_17105)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M37.899 49.4498C32.003 49.4498 26.0129 45.9498 22.517 41.3172C5.7448 41.3172 5.23779 65.2775 5.23779 65.2775H70.5561C70.5561 65.2775 71.8727 41.2109 53.0112 41.2109C49.5193 45.9008 43.795 49.4498 37.899 49.4498Z"
+                                    fill="#4F00FF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M51.948 20.7262C51.948 27.6199 45.6553 40.8022 37.8866 40.8022C30.1302 40.8022 23.8335 27.6158 23.8335 20.7262C23.8335 13.8366 30.1261 8.24316 37.8866 8.24316C45.6553 8.24725 51.948 13.8407 51.948 20.7262Z"
+                                    fill="#4F00FF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M58.2184 14.7768C58.2184 13.4847 56.4193 12.4421 54.1868 12.4339V9.77209C54.1868 9.37547 54.3381 0.0898438 37.9339 0.0898438C21.5379 0.0898438 21.6892 9.37547 21.6892 9.77209V12.5279C21.6483 12.5279 21.6156 12.5157 21.5788 12.5157C19.3586 12.5157 17.5718 13.5419 17.5718 14.8136V26.0741C17.5718 27.3375 19.3627 28.3679 21.5788 28.3679C23.7949 28.3679 25.594 27.3375 25.594 26.0741V14.8136C25.594 14.6377 25.4836 14.4783 25.4182 14.3147V11.244C25.4182 10.9619 24.2406 3.95375 37.9339 3.95375C51.6313 3.95375 50.2084 10.9619 50.2084 11.244V14.4783C50.1839 14.5805 50.1062 14.6705 50.1062 14.7768V26.2949C50.1062 27.591 51.9176 28.6418 54.1623 28.6418C54.2114 28.6418 54.2482 28.6255 54.2972 28.6255V32.8328H50.2739V36.799H58.2593L58.2184 14.7768Z"
+                                    fill="#4F00FF" />
+                            </g>
+                        </svg>
 
                         <p
-                            class="text-black text-[24px] font-semibold leading-[130%] font-[inter] max-w-[342px] text-center mx-auto ">
+                            class="text-black text-[24px] font-semibold leading-[130%] font-Inter mx-w-[342px]  text-center mx-auto pt-[20px] pb-[15px]">
                             Support & Maintenance</p>
                         <p
-                            class="text-[#4D4D4D] text-[16px] font-normal leading-[24px] ff-gilroy-regular max-w-[342px] text-center pt-4 pb-6">
+                            class="text-[#4D4D4D] text-[16px] font-normal leading-[150%] max-w-[342px] text-center mx-auto pb-[20px]">
                             Ac donec ipsum fringilla tortor, consectetur etiam sociis amet quis. Viverra volutpat
                             pretium non in fusce tellus sed
-                            urna. Pharetra<br> ullamcorper et donec aliquam.</p>
-                        <p
-                            class=" text-[#6022EA] text-[16px] font-semibold leading-[24px] ff-gilroy-regular text-center  relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[#6022EA] hover:after:w-full after:duration-300 ">
-                            Learn More</p>
+                            urna. Pharetra ullamcorper et donec aliquam.</p>
+                        <button
+                            class="text-[#6022EA] text-[16px] font-semibold leading-[150%] cursor-pointer text-center mx-auto flex justify-center ff-Gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-full after:duration-300">Learn
+                            More</button>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- ===============================section-4=================================================== -->
-    <section class="bg-black py-[81px] relative z-20">
-        <div class="container mx-auto px-[12px]">
-            <div class="row flex flex-wrap flex-row mx-[-12px] sm:justify-center">
-                <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px]">
+    <section class="bg-black py-[81px] relative z-19" id="services">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
+            <div class="row flex flex-wrap flex-row mx-[-12px] justify-between">
+                <div class="col-4 lg:w-[33.33%] md:w-[100%] px-[12px]">
                     <h4
-                        class="text-white md:text-[40px] text-[30px] font-normal leading-normal ff-konexy-regular max-w-[533px]">
+                        class="text-white md:text-[40px] text-[30px] font-normal leading-normal ff-konexy-regular max-lg:mb-10 max-md:mb-5 ">
                         All
-                        Vipe Studio<br>
-                        WordPress<br>
+                        Vipe Studio
+                        WordPress
                         services include:</h4>
                 </div>
-                <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px]">
+                <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px] ">
                     <ul class=" flex flex-col gap-[11px] max-md:mt-10">
                         <li class="text-white text-[24px] font-semibold leading-[130%] pb-[12px]">By Industry</li>
                         <li class="flex gap-[10px] items-center">
@@ -465,26 +452,13 @@
                         </li>
 
 
-                        <li class="flex gap-[10px] items-center">
-                            <img src="./dist/images/tick-mark.svg" alt="tick-mark.svg">
-                            <a href="" class="text-white text-[16px] font-normal leading-[150%] ff-Gilroy-regular">Lorem
-                                in elementum
-                                pellentesque</a>
-                        </li>
 
-
-                        <li class="flex gap-[10px] items-center">
-                            <img src="./dist/images/tick-mark.svg" alt="tick-mark.svg">
-                            <a href="" class="text-white text-[16px] font-normal leading-[150%] ff-Gilroy-regular">Lorem
-                                in elementum
-                                pellentesque</a>
-                        </li>
 
                     </ul>
                 </div>
 
                 <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px]">
-                    <ul class=" flex flex-col gap-[11px] max-lg:mt-10">
+                    <ul class=" flex flex-col gap-[11px] max-md:mt-10">
                         <li class="text-white text-[24px] font-semibold leading-[130%] pb-[12px]">By Services</li>
                         <li class="flex gap-[10px] items-center">
                             <img src="./dist/images/tick-mark.svg" alt="tick-mark.svg">
@@ -532,20 +506,20 @@
 
             </div>
 
-            <div class="pt-[120px]">
+            <div class="pt-[120px] max-lg:pt-[60px]">
                 <div class="max-w-[1320px] w-full bg-black rounded-[25px] relative z-10">
-                    <div class="row relative justify-center  -lg pt-[27px] pe-[32px] pb-[27px] ps-[33px] ">
-                        <div class="col-4 lg:w-[33.33%] px-[12px] relative z-[2]">
+                    <div class="row relative justify-between   pt-[27px] pe-[32px] pb-[27px] ps-[33px] max-lg:ps-0">
+                        <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px] relative z-[2]">
                             <p class="text-white text-[35px] font-normal ff-Gilroy-regular max-w-[324px] pb-[38px]">Not
                                 Sure
                                 which service you
                                 need yet?
                             </p>
                             <button
-                                class="text-white text-[16px] font-semibold leading-[150%] py-[10px] px-[24px] bg-[#6022EA] rounded-[80px] hover:bg-[white] hover:text-[#6022EA] transition-all ease-linear duration-300 text-nowrap">Schedule
+                                class="text-white text-[16px] font-semibold leading-[150%] py-[10px] px-[24px] bg-[#6022EA] rounded-[80px] hover:bg-[white] hover:text-[#6022EA] transition-all ease-linear duration-300 text-nowrap md:mb-10">Schedule
                                 An Appointment</button>
                         </div>
-                        <div class="col-4 lg:w-[33.33%] px-[12px] max-md:mt-10">
+                        <div class="col-4 lg:w-[33.33%] md:w-[50% px-[12px] max-md:mt-10">
                             <p class="text-white text-[24px] font-bold pb-[25px] max-w-[386px]">20-m free consultation
                                 that
                                 will help
@@ -593,9 +567,9 @@
     </section>
     <!-- ====================================== section-5========================================= -->
     <section class="bg-[#F6F6F6] py-10">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <h1
-                class="text-black text-[48px] max-sm:text-[24px] font-normal leading-[56px] ff-konexy-regular max-w-[631px] pt-5">
+                class="text-black text-[48px] max-sm:text-[24px] font-normal leading-normal ff-konexy-regular max-w-[631px] pt-5">
                 Long Term
                 <br>WordPress Partner
             </h1>
@@ -605,7 +579,7 @@
                 long-term
                 partnership – we will not only develop your perfect website, but will<br> be behind you through
                 the whole process. They already trusted us:</p>
-            <div class="flex flex-wrap gap-[58px] items-center pb-5 max-2xl:justify-center ">
+            <div class="flex gap-[58px] items-center pb-5 justify-between overflow-x-scroll no-scrollbar ">
                 <img class="cursor-pointer" src="./dist/images/propy-1.png" alt="propy-1.png">
                 <img class="cursor-pointer" src="./dist/images/ciela-2.png" alt="ciela-2.png">
                 <img class="cursor-pointer" src="./dist/images/revule-3.png" alt="revule-3.png">
@@ -617,27 +591,28 @@
     </section>
     <!-- =============================== section-6======================================================== -->
     <section class="pt-5 pb-10">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row flex flex-wrap flex-row mx-[-12px] justify-center">
-                <div class="col-5 lg:w-[41.66%] md:w-[50%]  px-[12px] ">
+                <div class="col-5 lg:w-[41.66%]   px-[12px] ">
                     <!-- <div class="w-full h-full"> -->
                     <img class="w-full h-full cursor-pointer " src="./dist/images/Group-35016.png"
                         alt="Group-35016.png">
                     <!-- </div> -->
                 </div>
-                <div class="col-7 lg:w-[58.33%] md:w-[50%] px-[12px]">
+                <div class="col-7 lg:w-[58.33%]  px-[12px]">
                     <div class="p-10">
-                        <h1 class=" text-black text-[48px] font-normal leading-normal ff-konexy-regular pt-10 "><span
-                                class="text-[#6022EA]">Agile WordPress<br></span> Development Project<br> management
+                        <h1
+                            class=" text-black sm:text-[48px] text-[20px] font-normal leading-normal ff-konexy-regular pt-10 ">
+                            <span class="text-[#6022EA]">Agile WordPress</span> Development Project management
                         </h1>
                         <p class=" text-[#4C4C4C] text-[16px] leading-normal font-normal mx-w-[572px] pb-10 pt-3">
                             Suspendisse
                             consequat
                             egestas arcu
-                            et et. Viverra quis euismod neque luctus<br> bibendum. Fringilla in nibh fringilla
-                            vulputate in. Elit, ultricies vitae pulvinar arcu<br> dignissim ac non rutrum. Lacus tortor
+                            et et. Viverra quis euismod neque luctus bibendum. Fringilla in nibh fringilla
+                            vulputate in. Elit, ultricies vitae pulvinar arcu dignissim ac non rutrum. Lacus tortor
                             sollicitudin risus eget euismod
-                            in<br> bibendum turpis.</p>
+                            in bibendum turpis.</p>
 
 
                         <button
@@ -652,8 +627,8 @@
     </section>
     <!-- ============================== section-7 ======================================================== -->
     <section class="bg-[#F6F6F6] py-10">
-        <div class="container mx-auto px-[12px]">
-            <div class="row flex flex-row flex-wrap mx-[12px] items-center justify-center ">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
+            <div class="row flex flex-row flex-wrap mx-[12px] items-center  ">
                 <div class="col-6 lg:w-[50%] px-[12px] flex flex-col ">
                     <h1 class="text-black text-[48px] font-normal leading-normal ff-konexy-regular pt-5">Team Full of
                         Stars
@@ -685,8 +660,8 @@
         </div>
     </section>
     <!--====================================== section-8 ====================================================-->
-    <section class="pt-[217px] pb-[120px]">
-        <div class="container mx-auto px-[12px]">
+    <section class="pt-[217px]  " id="portfolio">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row flex flex-row flex-wrap mx-[12px] justify-center">
                 <div class="col-4 xl:w-[33.33%] px-[12px]">
                     <img class="pt-[40px] pb-[50px] xl:pb-[0] cursor-pointer" src="./dist/images/section-8-cartoon.png"
@@ -707,7 +682,7 @@
                         <button
                             class=" text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular shadow-purple-300 shadow-lg border border-[#6022EA] hover:bg-[#6022EA] hover:text-white py-[8px] px-[16px] rounded-[80px] transition-all duration-300 ease-linear">Category-4</button>
                     </div>
-                    <div class="row flex flex-row flex-wrap mx-[12px] justify-center">
+                    <div class="row flex flex-row flex-wrap  justify-center">
                         <div class="col-4 md:w-[33.33%] sm:w-[50%] px-[12px]">
                             <div
                                 class="box-1 border border-[#E6E6E6] border-solid hover:border-transparent rounded-[16px] pt-[15px] pb-[14px] pr-[17px] pl-[14px] cursor-pointer  shadow hover:shadow-lg duration-300 flex flex-col mt-[33px]">
@@ -721,7 +696,7 @@
                                     Arcu
                                     amet, consectetur vel pellentesque mattis ipsum sed mattis sed.</p>
                                 <button
-                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-[45%] after:duration-300 after:transition-all after:ease-linear inline-block">Read
+                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start hover:opacity-[0.5]">Read
                                     More....</button>
                             </div>
                         </div>
@@ -739,7 +714,7 @@
                                     Arcu
                                     amet, consectetur vel pellentesque mattis ipsum sed mattis sed.</p>
                                 <button
-                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-[45%] after:duration-300 after:transition-all after:ease-linear inline-block">Read
+                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start hover:opacity-[0.5]">Read
                                     More....</button>
                             </div>
                         </div>
@@ -757,7 +732,7 @@
                                     Arcu
                                     amet, consectetur vel pellentesque mattis ipsum sed mattis sed.</p>
                                 <button
-                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-[45%] after:duration-300 after:transition-all after:ease-linear inline-block">Read
+                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start hover:opacity-[0.5]">Read
                                     More....</button>
                             </div>
                         </div>
@@ -765,7 +740,7 @@
                 </div>
             </div>
             <!--================================== gradient-box================================================== -->
-            <div class="bg-[linear-gradient(91deg,#5F21E9_60%,#FA00FF_103%)] rounded-[17px] mt-10 translate-y-[91%]">
+            <div class="bg-[linear-gradient(91deg,#5F21E9_60%,#FA00FF_103%)] rounded-[17px] translate-y-[37%]">
 
                 <div class="flex justify-between items-center flex-wrap max-lg:justify-center max-md:mb-[40px] ">
                     <div class="p-8">
@@ -773,8 +748,10 @@
                             class="text-white sm:text-[48px] text-[30px] font-normal leading-normal ff-konexy-regular text-nowrap">
                             Have
                             you</h3>
-                        <p class="text-white font-semibold text-[24px] leading-[131%]">read our study about Speed and
-                            Performance in<br> WordPress?</p>
+                        <p class="text-white font-semibold sm:text-[24px] text-[12px] leading-[131%] ff-gilroy-regular">
+                            read our study
+                            about Speed and
+                            Performance <input type="button" value=""> WordPress?</p>
                     </div>
                     <div class="p-8">
                         <button
@@ -787,8 +764,8 @@
         </div>
     </section>
     <!-- ============================ footer====================================================== -->
-    <footer class="bg-black py-10">
-        <div class="container mx-auto px-[12px]">
+    <footer class="bg-black py-10" id="about">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class=" flex justify-between items-center py-3  pb-20 pt-[140px] flex-wrap ">
                 <img class="max-lg:mb-5 animate-pulse" src="./dist/images/logo.png" alt="logo">
                 <div
@@ -811,38 +788,41 @@
                         <div class="col-6 md:w-[50%] px-[12px] max-md:mt-[50px]">
                             <ul class="flex flex-col gap-[13px]">
                                 <li
-                                    class=" text-white text-[16px] font-normal leading-[24px] ff-gilroy-regular pb-[16px]">
+                                    class=" text-white text-[16px] font-normal leading-[24px] ff-gilroy-regular pb-[16px] ">
                                     Services</li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular "
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300"
                                         href="">WordPress
                                         Development</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular "
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300"
                                         href="">WooCommerce
                                         Development</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular "
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">WordPress
                                         Maintenance</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular " href="">Speed
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
+                                        href="">Speed
                                         Optimization</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular "
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">Dedicated
                                         WordPress Developer</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular " href="">Headless
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
+                                        href="">Headless
                                         WordPress Development</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular " href="">White
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
+                                        href="">White
                                         Label Development</a>
                                 </li>
                             </ul>
@@ -853,28 +833,32 @@
                                     class=" text-white text-[16px] font-normal leading-[24px] ff-gilroy-regular pb-[16px]">
                                     Services</li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular "
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">WordPress
                                         Hosting</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular " href="">PSD, XD,
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300"
+                                        href="">PSD, XD,
                                         Figma to WordPress Conversion</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular " href="">Custom
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
+                                        href="">Custom
                                         WordPress Theme</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular " href="">Custom
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
+                                        href="">Custom
                                         WordPress Plugins</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular " href="">CMS to
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
+                                        href="">CMS to
                                         WordPress</a>
                                 </li>
                                 <li class="flex gap-[4px] "><img src="./dist/images/arrow.png" alt="arrow.png">
-                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular "
+                                    <a class="text-white text-[14px] leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">WordPress
                                         Malware Removal</a>
                                 </li>
@@ -888,19 +872,19 @@
                     <div class="row flex flex-wrap flex-row mx-[-12px]">
                         <div class="col-6 md:w-[50%] px-[12px] max-lg:mt-[50px]">
                             <ul class="flex flex-col gap-[21px]">
-                                <li class=" text-white text-[16px] font-normal leading-6 ff-gilroy-regular pb-[15px]">
+                                <li class=" text-white text-[16px] font-normal leading-6 ff-gilroy-regular pb-[15px] ">
                                     Latest
                                     Articles</li>
-                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular max-w-[248px] "
+                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular max-w-[248px] relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">7 WordPress Plugins to Create an Effective Newsletter 03.01.2022</a>
                                 </li>
-                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular "
+                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300"
                                         href=""> What’s the Perfect Blog Post Length for<br> Your WordPress Site’s
                                         SEO?<br>
                                         02.01.2022</a></li>
-                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular "
+                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300"
                                         href="">5 Reasons the Future of WordPress Is<br> Headless 01.01.2022</a></li>
-                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular "
+                                <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300"
                                         href="">Viptor Says: Vipe Studio’s WordPress<br> Developers Wrap Up the
                                         Amazingly<br>
                                         Successful 2021 30.12.2021</a></li>
@@ -921,11 +905,11 @@
                                             fill="white" />
                                     </svg>
 
-                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular "
+                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300  "
                                         href="">EU: +359 988 993 128</a>
                                 </li>
                                 <li class="flex gap-3">
-                                    <svg class="animate-pulse"width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    <svg class="animate-pulse" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13 8C13.7956 8 14.5587 8.31607 15.1213 8.87868C15.6839 9.44129 16 10.2044 16 11C16 11.2652 16.1054 11.5196 16.2929 11.7071C16.4804 11.8946 16.7348 12 17 12C17.2652 12 17.5196 11.8946 17.7071 11.7071C17.8946 11.5196 18 11.2652 18 11C18 9.67392 17.4732 8.40215 16.5355 7.46447C15.5979 6.52678 14.3261 6 13 6C12.7348 6 12.4804 6.10536 12.2929 6.29289C12.1054 6.48043 12 6.73478 12 7C12 7.26522 12.1054 7.51957 12.2929 7.70711C12.4804 7.89464 12.7348 8 13 8Z"
@@ -935,7 +919,7 @@
                                             fill="white" />
                                     </svg>
 
-                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular "
+                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">US: +1 (1 888) 266-6917</a>
                                 </li>
                                 <li class="flex gap-3">
@@ -949,7 +933,7 @@
                                             fill="white" />
                                     </svg>
 
-                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular "
+                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">office@vipestudio.com
                                     </a>
                                 </li>
@@ -968,7 +952,7 @@
                                         </defs>
                                     </svg>
 
-                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular "
+                                    <a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300 "
                                         href="">14 Srebarna, Sofia 1407, Bulgaria</a>
                                 </li>
                             </ul>
@@ -992,16 +976,16 @@
 
                 <div class="flex gap-3 justify-center">
                     <p
-                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  hover:opacity-[0.5]">
                         Privacy</p>
                     <p
-                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  hover:opacity-[0.5]">
                         Careers</p>
                     <p
-                        class="text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class="text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  hover:opacity-[0.5]">
                         Media</p>
                     <p
-                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular cursor-pointer  hover:opacity-[0.5]">
                         Client Area</p>
                 </div>
                 <div class="flex gap-[17px] max-sm:mt-[30px] items-center">

@@ -28,24 +28,32 @@
     .row {
         @apply flex flex-wrap flex-row mx-[-12px];
     }
+
+    .line {
+        @apply after: absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-[white] hover:after:w-full after:duration-300;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-@font-face {
+    @font-face {
 
 
-    font-family: 'Konexy';
-    src: url(/dist/font/konexy-personal-use-cufonfonts/KonexyPersonalUse.otf)
-}
+        font-family: 'Konexy';
+        src: url(/dist/font/konexy-personal-use-cufonfonts/KonexyPersonalUse.otf)
+    }
 
-@font-face {
-    font-family: 'Gilroy';
-    src: url(/dist/assets/gilroy/Gilroy-Regular.ttf);
-}
+    @font-face {
+        font-family: 'Gilroy';
+        src: url(/dist/assets/gilroy/Gilroy-Regular.ttf);
+    }
 
-.ff-gilroy-regular {
-    font-family: 'Gilroy';
-}
+    .ff-gilroy-regular {
+        font-family: 'Gilroy';
+    }
 
-.ff-konexy-regular {
-    font-family: 'Konexy';
-}
+    .ff-konexy-regular {
+        font-family: 'Konexy';
+    }
